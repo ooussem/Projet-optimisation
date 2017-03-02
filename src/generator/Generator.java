@@ -49,7 +49,7 @@ public class Generator {
 		if (minQ!=maxQ)
 			this.weightBag2 =  minQ+r2.nextInt((int)maxQ-(int)minQ);
 		else
-			this.weightBag2 =maxQ;
+			this.weightBag2 = maxQ;
 		
 		
 		for (int i=0;  i<nbObject; i++)

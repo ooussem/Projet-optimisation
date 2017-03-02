@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="commons-codec-1.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/commons-codec-1.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/commons-logging-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dom4j-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/junit-3.8.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/log4j-1.2.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/log4j-1.2.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-3.9-20121203.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-3.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-examples-3.9-20121203.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-excelant-3.9-20121203.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-ooxml-3.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-ooxml-3.9-20121203.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-ooxml-schemas-3.9-20121203.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-scratchpad-3.9-20121203.jar!/" />
+      <root url="jar://$PROJECT_DIR$/stax-api-1.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/xmlbeans-2.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
