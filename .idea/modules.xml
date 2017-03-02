@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Projet-optimisation.iml" filepath="$PROJECT_DIR$/Projet-optimisation.iml" />
-      <module fileurl="file://$PROJECT_DIR$/srcppp/src.iml" filepath="$PROJECT_DIR$/srcppp/src.iml" />
     </modules>
   </component>
 </project>
