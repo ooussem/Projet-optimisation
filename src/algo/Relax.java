@@ -30,6 +30,13 @@ public class Relax {
 		}
 	}
 
+	//TODO : Commentaire à continuer
+	/**
+	 * Méthode qui permettra de trouver la meilleur solution
+	 * L'algo va donc prendre le poid total des 2 sacs
+	 * @param items : une liste d'items
+	 * @return la meilleur solution
+	 */
 	public double findBestSolution(List<Item> items){
 		Collections.sort(items);//Trie de la liste item par leur rapport utilité poids.
 		for(Item item : items){
