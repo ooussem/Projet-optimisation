@@ -12,17 +12,18 @@ import static org.testng.Assert.*;
  * Created by OOussema on 01/03/2017.
  */
 public class GloutonTest {
+
 	Glouton glouton;
-	Bag b1;
-	Bag b2;
+	Glouton glouton2;
 	List<Item> items;
-	Bag[] bags = {new Bag(1,9),new Bag(2,5)};
+	Bag bags[] = {new Bag(1,9),new Bag(2,5)};
+	Bag bags2[] = {new Bag(0,13)};
 
 	@BeforeClass
 	public void setUp() throws Exception {
-//		b1 = new Bag(1,9);
-//		b2 = new Bag(2,5);
+
 		glouton = new Glouton();
+		glouton2 = new Glouton();
 		items = new ArrayList<>();
 		items.add(new Item(1, 3, 30));
 		items.add(new Item(2, 4, 36));
@@ -35,8 +36,6 @@ public class GloutonTest {
 
 	@AfterClass
 	public void tearDown() throws Exception {
-		b1 = null;
-		b2 = null;
 		glouton = null;
 		items = null;
 	}
@@ -52,6 +51,18 @@ public class GloutonTest {
 		}
 		System.out.println("Best solution : "+resultBestSolution);
 		assertEquals(resultBestSolution,120);
+
+
+
+		int resultBestSolution2 = glouton2.findBestSolution(bags2, items);
+		for(int i = 0; i<bags2.length;i++){
+			System.out.println("Bag " +i+ "");
+			for(Item item: bags2[i].itemsTaken){
+				System.out.println("Item:" +item.getId()+ " utility:"+item.getUtility());
+			}
+		}
+		System.out.println("Best solution : "+resultBestSolution2);
+		assertEquals(resultBestSolution2,111);
 	}
 
 

@@ -41,12 +41,12 @@ public class Generator {
 	{
 		Random r = new Random();
 		Random r2 = new Random();
-		if (minP!=maxP)
+		if (minP != maxP)
 			this.weightBag1 =  minP+r.nextInt((int)maxP-(int)minP);
 		else
 			this.weightBag1 = maxP;
 		
-		if (minQ!=maxQ)
+		if (minQ != maxQ)
 			this.weightBag2 =  minQ+r2.nextInt((int)maxQ-(int)minQ);
 		else
 			this.weightBag2 = maxQ;

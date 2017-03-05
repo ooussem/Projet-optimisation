@@ -40,20 +40,21 @@ public class Relax {
 	public double findBestSolution(List<Item> items){
 		Collections.sort(items);//Trie de la liste item par leur rapport utilité poids.
 		for(Item item : items){
-			if(this.completedLevel < this.totalWeightBags && item.getWeight()<=(this.totalWeightBags -this.completedLevel)) {
+			if(this.completedLevel < this.totalWeightBags
+					&& item.getWeight()<=(this.totalWeightBags -this.completedLevel)) {
 				this.completedLevel += item.getWeight();
-				item.setTaken(true);
-
 				this.bestSolution += item.getUtility();
 			}
 			else if(this.completedLevel < this.totalWeightBags &&
-					item.getWeight() > (this.totalWeightBags -this.completedLevel)){
+					item.getWeight() >= (this.totalWeightBags-this.completedLevel)){
 
+
+				this.bestSolution += ((this.totalWeightBags-this.completedLevel)/ (double)item.getWeight()) * (double)item.getUtility();;
 				this.completedLevel += (this.totalWeightBags-this.completedLevel);
-				this.bestSolution += (this.totalWeightBags-this.completedLevel)/ item.getWeight() * item.getUtility();
+				item.setTaken(true);
 			}
 
-			else break;
+
 		}
 		return this.bestSolution;
 	}
